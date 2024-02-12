@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="productspage.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"> </div>
+            </div>
+                <div class="nav-address border">
+                    <p class="add-first">Deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-sec">India</p>
+                    </div>
+                     
+                </div>
+            <div class="nav-search">
+                <select class="search-select" onchange="location=this.value;">
+                    <option value="amazon.html">All</option>
+                    <option value="clothes.html">Clothes</option>
+                    <option value="health.html">Health</option>
+                    <option value="electronics.html">Electronics</option>
+                    <option value="beauty.html">Beauty</option>
+                    <option value="petcare.html">Pet care</option>
+                    <option value="Toys.html">Toys</option>
+                    <option value="discover.html">Fashion</option>
+                    <option value="furniture.html">Furniture</option>
+                </select >
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-singin border">
+                <p><span><a href="signin.html" style="color: white;">Hello, Sign in</a></span></p>
+                <p class="nav-sec"><a href="signin.html" style="color: white;">Account & Lists</a></p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns </span></p>
+                <p class="nav-sec"> & Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart 
+            </div>
+        </div>
+        <div class="shop-section">
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>IPHONE 15PRO</h5>
+                <div class="box-img" style="background-image: url('iphone15pro.jpg');"></div>
+                <p>Apple iPhone 15PRO (512 GB) - Natural Titanium</p>
+                <h3>$1,149</h3>
+                <button class="button" onclick="addToCart('iphone15pro')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>S23 ULTRA</h5>
+                <div class="box-img" style="background-image: url('S23 ULTRA.JPG');"></div>
+                <p>SAMSUNG Galaxy S23 Ultra 5G (Green, 256 GB)  (12 GB RAM)</p>
+                <h3>$1,099</h3>
+                <button class="button" onclick="addToCart('S23 ULTRA')">Add to Cart</button>
+            </div>
+            </div> 
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>Galaxy Z Flip5</h5>
+                <div class="box-img" style="background-image: url('Zflip5.jpg');"></div>
+                <p>SAMSUNG Galaxy Z Flip5 (Lavender, 256 GB)  (8 GB RAM)</p>
+                <h3>$999</h3>
+                <button class="button" onclick="addToCart('Zflip5')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>IPHONE 15</h5>
+                <div class="box-img" style="background-image: url('iphone15.jpg');"></div>
+                <p>Apple iPhone 15 (128 GB) - Black</p>
+                <br>
+                <h3>$879</h3>
+                <button class="button" onclick="addToCart('iphone15')">Add to Cart</button>
+            </div>
+            </div>
+            
+            <div class=" box">
+                <div class="box-content">
+                <h5>IPHONE14 PLUS</h5>
+                <div class="box-img" style="background-image: url('iphone14plus.jpg');"></div>
+                <p>Apple iPhone 14 Plus (128 GB) - Blue</p>
+                <br>
+                <h3>$829</h3>
+                <button class="button" onclick="addToCart('iphone14plus')">Add to Cart</button>
+            </div>
+            </div>
+           
+            <div class=" box">
+                <div class="box-content">
+                <h5>PIXEL 7PRO</h5>
+                <div class="box-img" style="background-image: url('pixel7pro.jpg');"></div>
+                <p>Google Pixel 7 Pro (Hazel, 128 GB)  (12 GB RAM) </p>
+                <h3>$749</h3>
+                <button class="button" onclick="addToCart('pixel7pro')">Add to Cart</button>
+            </div>
+            </div>
+
+            < <div class=" box">
+                <div class="box-content">
+                <h5>PIXEL 7</h5>
+                <div class="box-img" style="background-image: url('pixel7.jpg');"></div>
+                <p>Google Pixel 7 (Lemon Grass, 128 GB)  (8 GB RAM)</p>
+                <h3>$489</h3>
+                <button class="button" onclick="addToCart('pixel7')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>MOTO EDGE 40</h5>
+                <div class="box-img" style="background-image: url('motorola.jpg');"></div>
+                <p>MOTOROLA Edge 40 (Nebula Green, 256 GB)  (8 GB RAM)</p>
+                <h3>$325</h3>
+                <button class="button" onclick="addToCart('motorola')">Add to Cart</button>
+            </div>
+            </div>
+
+        </div>
+        <script>
+            let shoppingCart = {}; // Initialize an empty shopping cart as an object.
+          
+            // Function to add an item to the cart.
+            function addToCart(productId) {
+              if (!shoppingCart[productId]) {
+                shoppingCart[productId] = 1; // If the product is not in the cart, add it with a quantity of 1.
+              } else {
+                shoppingCart[productId]++; // If the product is already in the cart, increase the quantity.
+              }
+          
+              // Display an alert to confirm the addition to the cart.
+              alert('Item added to the cart');
+            }
+          </script>
+    </body>
+    </html>

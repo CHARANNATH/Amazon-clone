@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="productspage.css">
+    <link rel="javascript" href="cart.js">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"> </div>
+            </div>
+                <div class="nav-address border">
+                    <p class="add-first">Deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-sec">India</p>
+                    </div>
+                     
+                </div>
+            <div class="nav-search">
+                <select class="search-select" onchange="location=this.value;">
+                    <option value="amazon.html">All</option>
+                    <option value="clothes.html">Clothes</option>
+                    <option value="health.html">Health</option>
+                    <option value="electronics.html">Electronics</option>
+                    <option value="beauty.html">Beauty</option>
+                    <option value="petcare.html">Pet care</option>
+                    <option value="Toys.html">Toys</option>
+                    <option value="discover.html">Fashion</option>
+                    <option value="furniture.html">Furniture</option>
+                </select >
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-singin border">
+                <p><span><a href="signin.html" style="color: white;">Hello, Sign in</a></span></p>
+                <p class="nav-sec"><a href="signin.html" style="color: white;">Account & Lists</a></p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns </span></p>
+                <p class="nav-sec"> & Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart 
+            </div>
+        </div>
+        <div class="shop-section">
+            <div class=" box">
+                <div class="box-content">
+                <h5>SERUM</h5>
+                <div class="box-img" style="background-image: url('p1.jpg');width:200px;"></div>
+                <p>COSRX Snail Mucin 96% Power Repairing Essence 3.38 fl.oz 100ml,
+                     Hydrating Serum for Face with Snail Secretion 
+                     </p>
+                    <h3>PRICE : $34</h3>
+                    <button class="button" onclick="addToCart('p1')">Add to Cart</button>
+            </div>
+            </div>
+            
+            <div class=" box">
+                <div class="box-content">
+                <h5>LAKME SUN EXPERT</h5>
+                <div class="box-img" style="background-image: url('p2.jpg');width:200px;"></div>
+                <p>Lakme Sun Expert SPF 50 PA+++ Ultra Matte Lotion Sunscreen,
+                     Lightweight, Non Sticky, Non Greasy, 
+                     Blocks Upto 97% </p>
+                      <h3>PRICE : $22</h3>
+                      <button class="button" onclick="addToCart('p2')">Add to Cart</button>
+            </div>
+            </div>
+           
+            <div class=" box">
+                <div class="box-content">
+                <h5>NIVEA LOTION</h5>
+                <div class="box-img" style="background-image: url('p3.jpg');width:200px;"></div>
+                <p>NIVEA Nourishing Body Milk 400ml Body Lotion 
+                    | 48 H Moisturization | With 2X Almond Oil |
+                     Smooth and Healthy 
+                     </p>
+                     <h3>PRICE : $18</h3>
+                     <button class="button" onclick="addToCart('p3')">Add to Cart</button>
+            </div>
+            </div>
+
+            < <div class=" box">
+                <div class="box-content">
+                <h5>MACBELLINE NEW YORK</h5>
+                <div class="box-img" style="background-image: url('p4.jpg');width:200px;"></div>
+                <p>Maybelline New York Compact Powder,
+                     With SPF to Protect Skin from Sun, 
+                     Absorbs Oil,Fit Me, 
+                     20 Natural Beige, 6g</p>
+                     <h3>PRICE : $30</h3>
+                     <button class="button" onclick="addToCart('p4')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>DOVE BODY WASH</h5>
+                <div class="box-img" style="background-image: url('p5.jpg');width:200px;"></div>
+                <p>Dove Hypoallergenic Body Wash To Moisturize
+                     Sensitive Skin Body Wash For 
+                     Sensitive Skin Sulfate and Paraben Free
+                     34 oz,  Scent:Unscented
+                    </p>
+                    <h3>PRICE : $300</h3>
+                    <button class="button" onclick="addToCart('p5')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>FACE WASH</h5>
+                <div class="box-img" style="background-image: url('p6.jpg');width:200px;"></div>
+                <p>Cetaphil Face Wash, 
+                    Hydrating Gentle Skin Cleanser
+                     for Dry to Normal Sensitive Skin, 
+                     NEW 20oz, Fragrance Free,
+                      Soap Free and Non-Foaming</p>
+                      <h3>PRICE : $13 </h3>
+                      <button class="button" onclick="addToCart('p6')">Add to Cart</button>
+            </div>
+            </div>
+
+             <div class=" box">
+                <div class="box-content">
+                <h5>MULTI STICK</h5>
+                <div class="box-img" style="background-image: url('p7.jpg');width:200px;"></div>
+                <p>e.l.f. Monochromatic Multi Stick, 
+                    Luxuriously Creamy & Blendable Color,
+                     For Eyes, Lips & Cheeks,
+                      Dazzling Peony, 0.17 oz (5 g)</p>
+                      <h3>PRICE : $5</h3>
+                    <button class="button" onclick="addToCart('p7')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>NIGTH PATCH</h5>
+                <div class="box-img" id="p8" style="background-image: url('p8.jpg');width:200px; "></div>
+                <p>Mighty Patch™ Nose patch from Hero 
+                    Cosmetics - XL Hydrocolloid Patches for
+                     Nose Pores, Pimples, Zits and
+                      Oil - Dermatologist-Approved </p>
+                       <h3>PRICE : $16.55</h3>                       
+                       <button class="button" onclick="addToCart('p7')">Add to Cart</button> 
+                    
+                    
+                    
+            </div>
+            </div>
+            <script>
+                let shoppingCart = {}; // Initialize an empty shopping cart as an object.
+              
+                // Function to add an item to the cart.
+                function addToCart(productId) {
+                  if (!shoppingCart[productId]) {
+                    shoppingCart[productId] = 1; // If the product is not in the cart, add it with a quantity of 1.
+                  } else {
+                    shoppingCart[productId]++; // If the product is already in the cart, increase the quantity.
+                  }
+              
+                  // Display an alert to confirm the addition to the cart.
+                  alert('Item added to the cart');
+                }
+              </script>
+        </div>
+        
+    </body>
+    </html>
+

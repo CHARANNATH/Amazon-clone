@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="productspage.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"> </div>
+            </div>
+                <div class="nav-address border">
+                    <p class="add-first">Deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-sec">India</p>
+                    </div>
+                     
+                </div>
+            <div class="nav-search">
+                <select class="search-select" onchange="location=this.value;">
+                    <option value="amazon.html">All</option>
+                    <option value="clothes.html">Clothes</option>
+                    <option value="health.html">Health</option>
+                    <option value="electronics.html">Electronics</option>
+                    <option value="beauty.html">Beauty</option>
+                    <option value="petcare.html">Pet care</option>
+                    <option value="Toys.html">Toys</option>
+                    <option value="discover.html">Fashion</option>
+                    <option value="furniture.html">Furniture</option>
+                </select >
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-singin border">
+                <p><span><a href="signin.html" style="color: white;">Hello, Sign in</a></span></p>
+                <p class="nav-sec"><a href="signin.html" style="color: white;">Account & Lists</a></p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns </span></p>
+                <p class="nav-sec"> & Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart 
+            </div>
+        </div>
+        <div class="shop-section">
+            <div class=" box">
+                <div class="box-content">
+                <h5>MEN'S T-SHIRTS SHORTS</h5>
+                <div class="box-img" style="background-image: url('da1.jpg');width:200px;"></div>
+                <p>COOFANDY Men's 2 Pieces Shirt Set Short Sleeve Button Down 
+                    Casual Hippie Holiday Beach T-Shirts Shorts Outfits</p>
+                    <br>
+                    <h3>PRICE:$42</h3>
+                    <button class="button" onclick="addToCart('da1')">Add to Cart</button>
+            </div>
+            </div>
+            
+            <div class=" box">
+                <div class="box-content">
+                <h5>OVERSIZED SWEATSHIRT</h5>
+                <div class="box-img" style="background-image: url('da2.jpg');width:200px;"></div>
+                <p>EFAN Womens Oversized Half Zip Pullover Sweatshirts
+                     Hoodie Quarter Zip Tops for Teen Girls Fall Trendy Y2K Clothes</p>
+                     <h3>PRICE:$20</h3>
+                     
+                     <button class="button" onclick="addToCart('da2')">Add to Cart</button>
+            </div>
+            </div>
+           
+            <div class=" box">
+                <div class="box-content">
+                <h5>MINI DRESS</h5>
+                <div class="box-img" style="background-image: url('da3.jpg');width:200px;"></div>
+                <p>Dokotoo Womens 2023 Fall Deep V Neck Ruffle
+                     Long Sleeve Floral Print Mini Dress</p>
+                     <br>
+                     <br>
+                    <h3>PRICE:$49</h3>
+                    
+                    <button class="button" onclick="addToCart('da3')">Add to Cart</button>
+            </div>
+            </div>
+
+             <div class=" box">
+                <div class="box-content">
+                <h5>WOMEN'S SHORT</h5>
+                <div class="box-img" style="background-image: url('da4.jpg');width:200px;"></div>
+                <p>Columbia Women's Sandy River Ii Printed Short</p>
+                <br>
+                <br>
+                      <h3>PRICE:$17</h3>
+                      
+                      <button class="button" onclick="addToCart('da4')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>SPORTS TANK TOP</h5>
+                <div class="box-img" style="background-image: url('da5.jpg');width:200px;"></div>
+                <p>NEWMEEN Blevonh Women's Scoop Neck Spaghetti
+                     Strap Racerback Sports Cami Tank Tops</p>
+                     <br>
+                    <h3>PRICE:$15</h3>
+                    <button class="button" onclick="addToCart('da5')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>LENIN SHIRT</h5>
+                <div class="box-img" style="background-image: url('da6.jpg');width:200px;"></div>
+                <p>ELESOL Women 2 Piece Outfit Sets Cotton Linen Button 
+                    Down Shirt and Shorts Lounge Tracksuit Sets</p>
+                    <br>
+                      <h3>PRICE:$28</h3>
+                      <button class="button" onclick="addToCart('da6')">Add to Cart</button>
+            </div>
+            </div>
+
+             <div class=" box">
+                <div class="box-content">
+                <h5>NECK SPORTS BRA</h5>
+                <div class="box-img" style="background-image: url('da7.jpg');width:200px;"></div>
+                <p>OQQ Women's 4 Piece Outfits Ribbed Exercise Scoop Neck Sports Bra 
+                    One Shoulder Tops High Waist Shorts Leggings Active Set</p>
+                    <h3>PRICE:$30</h3>
+                    <button class="button" onclick="addToCart('da7')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class=" box">
+                <div class="box-content">
+                <h5>WOMEN'S LONG SLEEVE HOODIEE</h5>
+                <div class="box-img" style="background-image: url('da8.jpg');width:200px;"></div>
+                <p>MEROKEETY Women's 2023 Long Sleeve Hooded Cardigan Dressy
+                     Open Front Knit Sweater Coat with Pockets</p>
+                     <br>
+                    <h3>PRICE:$36</h3>
+                    <button class="button" onclick="addToCart('da8')">Add to Cart</button>
+            </div>
+            </div>
+
+        </div>
+        <script>
+            let shoppingCart = {}; // Initialize an empty shopping cart as an object.
+          
+            // Function to add an item to the cart.
+            function addToCart(productId) {
+              if (!shoppingCart[productId]) {
+                shoppingCart[productId] = 1; // If the product is not in the cart, add it with a quantity of 1.
+              } else {
+                shoppingCart[productId]++; // If the product is already in the cart, increase the quantity.
+              }
+          
+              // Display an alert to confirm the addition to the cart.
+              alert('Item added to the cart');
+            }
+          </script>
+    </body>
+    </html>
